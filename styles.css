@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background-color: #ffcc00;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.2rem;
+    color: #333;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+canvas {
+    border: 2px solid #333;
+    background-color: #fff;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+label {
+    font-size: 1.1rem;
+}
+
+input[type="range"] {
+    width: 60%;
+}
+
+#arcCountValue,
+#scaleFactorValue {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+    canvas {
+        width: 100%;
+        height: auto;
+    }
+
+    input[type="range"] {
+        width: 90%;
+    }
+}
